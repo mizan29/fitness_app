@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0EFF5"
+                tools:context=".view.SettingsFragment">
+
+    <FrameLayout
+            android:id="@+id/find_friend_row_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/birth_day_title"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/profile_black_24dp"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:hint="Find Friends"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/right_arrow"
+                android:layout_gravity="right|center"
+                android:layout_height="30dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/privacy_row_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/find_friend_row_layout"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/profile_black_24dp"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:hint="Privacy Control"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/right_arrow"
+                android:layout_gravity="right|center"
+                android:layout_height="30dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/help_row_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/privacy_row_layout"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/profile_black_24dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:hint="Help"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/right_arrow"
+                android:layout_gravity="right|center"
+                android:layout_height="30dp"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/remove_add_row_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/help_row_layout"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/profile_black_24dp"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:hint="Remove Ads"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/right_arrow"
+                android:layout_gravity="right|center"
+                android:layout_height="30dp"/>
+
+    </FrameLayout>
+    <TextView
+            android:id="@+id/logout"
+            android:layout_below="@id/remove_add_row_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/splash_bg"
+            android:text="LOGOUT"
+            android:paddingTop="@dimen/input_box_padding"
+            android:paddingBottom="@dimen/input_box_padding"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

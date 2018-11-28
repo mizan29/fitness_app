@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/body_background"
+            android:layout_height="match_parent"
+            tools:context=".view.EditProfileFragment">
+        <LinearLayout
+                android:id="@+id/first_layout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/profile_placeholder"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_gravity="center"
+                          android:layout_marginLeft="10dp"
+                          android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:text="Mizan mahmud"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/dob"
+                        android:layout_width="match_parent"
+                        android:text="09/11/1089"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+                android:id="@+id/second_layout"
+                android:layout_width="match_parent"
+                android:padding="@dimen/input_box_padding"
+                android:layout_below="@+id/first_layout"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/following_number"
+                            android:layout_width="match_parent"
+                            android:text="229"
+                            android:textColor="@color/splash_bg"
+                            android:textSize="@dimen/input_text_size"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/following_title"
+                            android:layout_width="match_parent"
+                            android:text="FOLLOWING"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <FrameLayout
+                        android:layout_width="2dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/input_box_padding"
+                        android:layout_marginRight="@dimen/input_box_padding"
+                        android:background="@color/body_background"
+                        android:layout_height="30dp"/>
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/follower_number"
+                            android:layout_width="match_parent"
+                            android:text="19"
+                            android:textColor="@color/splash_bg"
+                            android:textSize="@dimen/input_text_size"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/follower_title"
+                            android:layout_width="match_parent"
+                            android:text="FOLLOWERS"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Find Friends"
+                    android:layout_gravity="right|center"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:background="@drawable/find_btn_bg"
+                    android:layout_height="wrap_content"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/fitness_goal_row_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/second_layout"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:id="@+id/birth_day_title"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/profile_black_24dp"
+                        android:layout_height="wrap_content"/>
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Your Fitness Goals"
+                            android:layout_gravity="right"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:hint="This year"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_gravity="right|center"
+                    android:layout_height="30dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/activity_row_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_below="@id/fitness_goal_row_layout"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/profile_black_24dp"
+                        android:layout_height="wrap_content"/>
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Your Activities"
+                            android:layout_gravity="right"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:hint="Today"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_gravity="right|center"
+                    android:layout_height="30dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/statistics_row_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_below="@id/activity_row_layout"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/profile_black_24dp"
+                        android:layout_height="wrap_content"/>
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Statistics"
+                            android:layout_gravity="right"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:hint="This year"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_gravity="right|center"
+                    android:layout_height="30dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+                android:id="@+id/favorite_row_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_below="@id/statistics_row_layout"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/profile_black_24dp"
+                        android:layout_height="wrap_content"/>
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Favorites"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:hint="17 Fitness challenges"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="30dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_gravity="right|center"
+                    android:layout_height="30dp"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+</ScrollView>

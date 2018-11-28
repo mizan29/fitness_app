@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/challenge_image"
+                android:padding="5dp"
+                android:layout_width="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/add_circle_black_18"
+                android:layout_height="60dp"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/challenge_title"
+                    android:layout_width="match_parent"
+                    android:text="60 miles marathon"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/challenge_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#D8D8D8"
+                    android:layout_height="1dp"/>
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/challenge_distance"
+                        android:layout_width="wrap_content"
+                        android:text="Distance: 17 mi"
+                        android:layout_gravity="left|center_horizontal"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/challenge_time_left"
+                        android:layout_width="wrap_content"
+                        android:text="17 days left"
+                        android:layout_gravity="right|center_horizontal"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+            <TextView
+                    android:id="@+id/challenge_likes"
+                    android:layout_width="match_parent"
+                    android:text="189"
+                    android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

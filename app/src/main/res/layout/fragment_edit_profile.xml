@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/body_background"
+            android:layout_height="match_parent"
+            tools:context=".view.EditProfileFragment">
+        <LinearLayout
+                android:id="@+id/first_layout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/profile_placeholder"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="vertical"
+                          android:layout_marginLeft="20dp"
+                          android:layout_height="wrap_content">
+                <EditText
+                        android:id="@+id/first_name"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:padding="@dimen/input_box_padding"
+                        android:text="Mizan"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+                <EditText
+                        android:id="@+id/last_name"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/white"
+                        android:padding="@dimen/input_box_padding"
+                        android:text="Mahmud"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/second_layout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/first_layout"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:padding="@dimen/input_box_padding"
+                    android:text="mizan_cse29@yahoo.com"
+                    android:textSize="@dimen/input_text_size"
+                    android:layout_height="wrap_content"/>
+            <FrameLayout android:layout_width="match_parent"
+                         android:background="@color/body_background"
+                         android:layout_height="2dp"/>
+            <EditText
+                    android:id="@+id/boi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bio"
+                    android:background="@color/white"
+                    android:padding="@dimen/input_box_padding"
+                    android:textSize="@dimen/input_text_size"/>
+            <FrameLayout android:layout_width="match_parent"
+                         android:background="@color/body_background"
+                         android:layout_height="2dp"/>
+            <EditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:background="@color/white"
+                    android:padding="@dimen/input_box_padding"
+                    android:textSize="@dimen/input_text_size"/>
+            <FrameLayout android:layout_width="match_parent"
+                         android:background="@color/body_background"
+                         android:layout_height="2dp"/>
+            <EditText
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="State"
+                    android:background="@color/white"
+                    android:padding="@dimen/input_box_padding"
+                    android:textSize="@dimen/input_text_size"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/athletic_title"
+                android:layout_below="@id/second_layout"
+                android:layout_width="match_parent"
+                android:padding="@dimen/input_box_padding"
+                android:text="ATHLETE INFORMATION"
+                android:textColor="@color/black"
+                android:textSize="@dimen/input_text_size"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:id="@+id/athletic_layout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/athletic_title"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/input_box_padding"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/birth_day_title"
+                        android:layout_width="wrap_content"
+                        android:text="Select Birthday"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/birth_day"
+                        android:layout_width="wrap_content"
+                        android:hint="Sept 28, 1987"
+                        android:layout_gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+            <FrameLayout android:layout_width="match_parent"
+                         android:background="@color/body_background"
+                         android:layout_height="2dp"/>
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/input_box_padding"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/gender_title"
+                        android:layout_width="wrap_content"
+                        android:text="Gender"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/txt_gender"
+                        android:layout_width="wrap_content"
+                        android:hint="Male"
+                        android:layout_gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+            <FrameLayout android:layout_width="match_parent"
+                         android:background="@color/body_background"
+                         android:layout_height="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/performance_title_layout"
+                android:layout_below="@id/athletic_layout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/input_box_padding"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/athletic_bottom_text"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:text="Used to calculate calories, power and more"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/performance_title"
+                    android:layout_width="match_parent"
+                    android:text="PERFORMANCE POTENTIAL"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/input_text_size"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/performance_layout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/performance_title_layout"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/input_box_padding"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/heart_rate_title"
+                        android:layout_width="wrap_content"
+                        android:text="Max Heart Rate"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/heart_rate"
+                        android:layout_width="wrap_content"
+                        android:hint="190"
+                        android:layout_gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+            <FrameLayout android:layout_width="match_parent"
+                         android:background="@color/body_background"
+                         android:layout_height="2dp"/>
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/input_box_padding"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/distance_title"
+                        android:layout_width="wrap_content"
+                        android:text="Running Race Distance"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/distance"
+                        android:layout_width="wrap_content"
+                        android:hint="17 mi"
+                        android:layout_gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+            <FrameLayout android:layout_width="match_parent"
+                         android:background="@color/body_background"
+                         android:layout_height="2dp"/>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/input_box_padding"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/time_title"
+                        android:layout_width="wrap_content"
+                        android:text="Running Race Time"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:hint="1 hr"
+                        android:layout_gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+            <FrameLayout android:layout_width="match_parent"
+                         android:background="@color/body_background"
+                         android:layout_height="2dp"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/performance_bottom_text"
+                android:layout_below="@+id/performance_layout"
+                android:padding="@dimen/input_box_padding"
+                android:layout_width="match_parent"
+                android:text="Used to set heart rate, running space zones and power zones"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>
